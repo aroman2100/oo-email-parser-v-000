@@ -17,11 +17,11 @@ class EmailParser
 
   def parse
 
-    parse_email= @email.split(/\s|\,/)
+    parse_email= @email.split(/\s|\,/).delete("")
       @all = []
-      parse_email.delete("")
+    #  parse_email.delete("")
       parse_email.each do |email|
-      
+
       @all << email
 
     end
