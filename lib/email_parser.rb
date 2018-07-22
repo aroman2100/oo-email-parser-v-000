@@ -18,7 +18,6 @@ class EmailParser
   def parse
 
       @all = []
-    #  parse_email.delete("")
       parse_email= @email.split(/\s|\,/)
       parse_email.delete("").each do |email|
 
