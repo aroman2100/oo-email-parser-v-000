@@ -22,7 +22,7 @@ class EmailParser
 
       @all = []
     #  parse_email.delete("")
-      parse_email= @email.split(", ")
+      parse_email= @email.split(",")
       parse_email.each do |email|
 
       @all << email
