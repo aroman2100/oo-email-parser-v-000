@@ -19,7 +19,8 @@ class EmailParser
 
       @all = []
       parse_email= @email.split(/\s|\,/)
-      parse_email.delete("").each do |email|
+      parse_email.delete("")
+      parse_email.each do |email|
 
       @all << email
 
