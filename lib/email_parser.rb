@@ -17,11 +17,12 @@ class EmailParser
 
   def parse
 
-    parse_email= @email.split(", ")
+
     binding.pry
 
       @all = []
     #  parse_email.delete("")
+    parse_email= @email.split(", ")
       parse_email.each do |email|
 
       @all << email
