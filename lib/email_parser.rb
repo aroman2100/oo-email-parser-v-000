@@ -20,7 +20,7 @@ class EmailParser
       @all = []
     #  parse_email.delete("")
       parse_email= @email.split(/\s|\,/)
-      parse_email.each do |email|
+      parse_email.delete("").ach do |email|
 
       @all << email
 
